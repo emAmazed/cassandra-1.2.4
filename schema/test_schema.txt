@@ -1,0 +1,7 @@
+use demodb;
+
+create column family blog_entry
+with comparator = TimeUUIDType
+and key_validation_class = UTF8Type
+and default_validation_class = UTF8Type;
+

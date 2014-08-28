@@ -1,0 +1,12 @@
+use demodb;
+
+create column family emp
+	with comparator = UTF8Type
+	and key_validation_class = UTF8Type
+	and column_metadata = [
+		{column_name: empid, validation_class: LongType}
+		{column_name: emp_first, validation_class: UTF8Type}
+		{column_name: emp_last, validation_class:UTF8Type}
+		{column_name: emp_dept, validation_class: UTF8Type}
+	];
+
